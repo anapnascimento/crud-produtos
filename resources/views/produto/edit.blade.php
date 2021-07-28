@@ -27,7 +27,7 @@
         </div>
         <div class="form-group">
           <label for="preco">Preço: </label>
-          <input type="text" id="preco" name="preco" value="{{$produto->preco}}" onchange="this.value = this.value.replace(/,/g, '.')" class="form-control ml-2">
+          <input type="number" step="0.01" id="preco" name="preco" value="{{$produto->preco}}" onchange="this.value = this.value.replace(/,/g, '.')" class="form-control ml-2">
         </div>
         <div class="form-group">
           <label for="quantidade">Quantidade: </label>
